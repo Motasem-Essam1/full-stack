@@ -1,0 +1,155 @@
+/* RegisterPage container */
+.register-page {
+  background-color: #f0f2f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  padding: 0 20px; /* Add some padding on small screens */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Title of the page */
+.register-page h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0 20px; /* Add horizontal padding */
+}
+
+/* Register form styling */
+.register-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Add spacing between form and page title */
+}
+
+/* Title inside the form */
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form field container */
+.register-form div {
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+.register-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Input fields styling */
+.register-form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin-top: 5px;
+  transition: border-color 0.3s;
+}
+
+/* Focus effect for inputs */
+.register-form input:focus {
+  border-color: #007BFF;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Button styling */
+.register-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.register-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive Media Queries */
+
+/* For Tablets and Mobile Portrait (Max Width 768px) */
+@media (max-width: 768px) {
+  .register-page h1 {
+    font-size: 28px;
+  }
+
+  .register-form {
+    padding: 20px;
+    width: 90%;  /* Use a smaller width for smaller screens */
+    max-width: 380px; /* Maximum width of the form */
+  }
+
+  .register-form h2 {
+    font-size: 20px;
+  }
+
+  .register-form input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .register-form button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* For Small Mobile Screens (Max Width 480px) */
+@media (max-width: 480px) {
+  .register-page h1 {
+    font-size: 24px;
+  }
+
+  .register-form {
+    padding: 15px;
+    width: 90%;
+    max-width: 350px; /* Smaller form size */
+  }
+
+  .register-form h2 {
+    font-size: 18px;
+  }
+
+  .register-form input {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .register-form button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

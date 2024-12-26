@@ -1,0 +1,140 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10px;  /* Added padding for small screens */
+}
+
+/* Container for the form */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Title */
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Styling for form fields */
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin-top: 5px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007BFF;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Small styling for error messages, if needed */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Add responsiveness */
+
+/* For Mobile Screens (Max Width 480px) */
+@media (max-width: 480px) {
+  form {
+    padding: 20px;
+    width: 100%;
+  }
+
+  form h2 {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+/* For Tablets (Max Width 768px) */
+@media (max-width: 768px) {
+  form {
+    padding: 25px;
+    width: 90%;
+    max-width: 380px;
+  }
+
+  form h2 {
+    font-size: 22px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 15px;
+  }
+}

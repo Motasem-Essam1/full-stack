@@ -1,0 +1,39 @@
+/* General container for the Home page */
+.home-container {
+    padding: 20px;
+    background-color: #f4f7fb; /* Light background for a clean look */
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Full height for proper vertical centering */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the top */
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  /* Title Styling */
+  .home-container h1 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    padding: 0 20px; /* Add horizontal padding for responsiveness */
+    font-weight: bold;
+    margin-bottom: 50px; /* Ensure space between the title and product list */
+  }
+  
+  /* Responsive Design for the Home Page */
+  @media (max-width: 768px) {
+    .home-container h1 {
+      font-size: 28px; /* Slightly smaller font size for tablets */
+      margin-bottom: 40px; /* Adjust margin-bottom for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-container h1 {
+      font-size: 24px; /* Smaller font size on mobile */
+      margin-bottom: 30px; /* Adjust margin-bottom for mobile screens */
+    }
+  }
+  

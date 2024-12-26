@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "jsx": "react",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+      "src/**/*",
+      "src/custom.d.ts"  // Ensure your custom declaration file is included
+    ]
+  }
+  

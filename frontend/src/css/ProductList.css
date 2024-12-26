@@ -1,0 +1,91 @@
+/* General styling for the Product List container */
+.product-list-container {
+    max-width: 95%; /* Increase max-width to 95% */
+    width: 90%; /* Explicitly define width, make it wider */
+    margin: 0 auto; /* Center the product list horizontally */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow-x: auto; /* Ensure scrolling if needed */
+}
+
+/* Title styling for Product List */
+.product-list-container h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+.product-list-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.product-list-container th,
+.product-list-container td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.product-list-container th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+}
+
+.product-list-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Styling for empty table message */
+.product-list-container .no-products td {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+    padding: 30px;
+}
+
+/* Add a class for when the table is empty */
+.product-list-container.empty {
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-list-container {
+        width: 95%; /* Take up 95% width on tablets */
+    }
+
+    .product-list-container h2 {
+        font-size: 20px;
+    }
+
+    .product-list-container table th,
+    .product-list-container table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-list-container {
+        width: 100%; /* Take up 100% width on small screens */
+    }
+
+    .product-list-container h2 {
+        font-size: 18px;
+    }
+
+    .product-list-container table th,
+    .product-list-container table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
