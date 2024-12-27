@@ -11,9 +11,6 @@
   - [Database Migration](#database-migration)
 - [Usage](#usage)
 - [System Architecture](#system-architecture)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Introduction
 
@@ -105,10 +102,45 @@ Register a new account or log in with an existing account.
 Explore the features of the application.
 
 
-### Summary:
-- **Added a "Database Migration" section** to the `README.md` with instructions on how to run the migration script.
-- **Included steps** on navigating to the migration script directory, ensuring the `.env` file is configured, and running the migration script.
+## System Architecture
+1. **Overview**
+    The full-stack application follows a client-server architecture. The frontend is built using React and communicates with the backend, which is built using Node.jsand Express. The backend handles user authentication, product management, and data storage in a MySQL database.
 
-This should help users of your project understand how to set up the database and run the migration script. If you have any more questions or need further assistance, feel free to ask! 😊
+2. **Frontend**
+*Framework: React with TypeScript
 
-What else would you like to explore or clarify?
+*Features: User registration, login, product listing, sorting, and filtering.
+
+*State Management: Managed using React state and hooks.
+
+*Communication: Uses Axios for API calls to the backend.
+
+3. **Backend**
+*Framework: Node.js with Express and TypeScript
+
+*Features: User authentication (JWT), product management, and API endpoints.
+
+*Database: MySQL for storing user and product data.
+
+*Environment Configuration: Managed using dotenv.
+
+4. **Data Flow**
+ 1-User Registration/Login:
+
+    *User submits registration/login form on the frontend.
+
+    *Frontend sends a POST request to the backend API (/api/users/register or /api/users/login).
+
+    *Backend validates the request, processes it, and returns a response.
+
+    *On successful login, a JWT token is issued and stored on the client side for authentication in subsequent requests.
+
+  2-Product Management:
+
+    *User accesses the product listing page.
+
+    *Frontend sends a GET request to the backend API (/api/products) to fetch product data.
+
+    *Backend retrieves product data from the MySQL database and sends it to the frontend.
+
+    *User can perform sorting and filtering on the frontend.
