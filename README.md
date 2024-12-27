@@ -66,7 +66,7 @@ Ensure you have the following installed on your machine:
 
     **Start the backend development server:**
     cd ../backend
-    npm run dev
+    npm start
 
     The backend server will run on http://localhost:5000.
 
