@@ -82,8 +82,11 @@ Ensure you have the following installed on your machine:
 2. **Ensure the .env file is configured correctly with your database credentials:**
 
     DB_HOST=localhost
+
     DB_USER=root
+
     DB_PASS=yourpassword
+    
     DB_NAME=yourdatabase
 
 3. **npx ts-node migrate.ts**
