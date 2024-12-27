@@ -87,6 +87,7 @@ Ensure you have the following installed on your machine:
     DB_NAME=yourdatabase
 
 3. **npx ts-node migrate.ts**
+
     npx ts-node migrate.ts
 
 
