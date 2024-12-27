@@ -10,6 +10,7 @@
   - [Running the Project](#running-the-project)
   - [Database Migration](#database-migration)
 - [Usage](#usage)
+- [System Architecture](#system-architecture)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -55,8 +56,8 @@ Ensure you have the following installed on your machine:
     cd ../backend
     npm install
 
-5. **Running the Project**
-    **Start the frontend development server:**
+## Running the Project
+1. **Start the frontend development server:**
     cd Frontend
     npm start
 
@@ -64,7 +65,7 @@ Ensure you have the following installed on your machine:
 
 
 
-    **Start the backend development server:**
+2. **Start the backend development server:**
     cd ../backend
     npm start
 
