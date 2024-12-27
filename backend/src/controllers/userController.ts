@@ -12,22 +12,22 @@ const jwtSecret = process.env.JWT_SECRET || 'your_jwt_secret'; // Ensure this is
 export const registerUser = async (req: Request, res: Response): Promise<void> => {
   try {
     const { username, password } = req.body;
+    console.log('Received data:', { username, password }); // Log the incoming data
 
+    if (!username || !password) {
+      res.status(400).json({ message: 'Username and password are required' });
+      return;
+    }
 
-    // Check if user already exists
     const existingUser = await findUserByUsername(username);
     if (existingUser) {
       res.status(400).json({ message: 'Username already exists' });
       return;
     }
 
-
-    // Hash the password
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
 
-
-    // Create new user
     await createUser(username, hashedPassword);
     res.status(201).json({ message: 'User registered successfully' });
   } catch (error) {
@@ -35,7 +35,6 @@ export const registerUser = async (req: Request, res: Response): Promise<void> =
     res.status(500).json({ message: 'Internal server error' });
   }
 };
-
 
 // User login function
 export const loginUser = async (req: Request, res: Response): Promise<void> => {

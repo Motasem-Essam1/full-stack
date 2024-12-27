@@ -15,7 +15,7 @@ const Register: React.FC = () => {
     }
     setError('');
     try {
-      const response = await axios.post('http://localhost:5000/api/users/register', {
+      const response = await axios.post('/api/users/register', {
         username,
         password,
       });
@@ -27,7 +27,7 @@ const Register: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Register</h2> {/* Add title */}
+      <h2>Register</h2>
       <div>
         <label>Username</label>
         <input
