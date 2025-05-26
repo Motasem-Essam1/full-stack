@@ -1,0 +1,24 @@
+Dear Motasem,
+
+You have 3 days to complete the following full-stack assignment. Treat this as a production-quality endeavor, building clean, maintainable, and well-structured code using TypeScript throughout both the front-end and back-end.
+
+Requirements
+
+User Onboarding: Implement secure registration and login flows. Ensure proper session handling and user authentication.
+Product Listing: Create a fully functional product listing page. Implement back-end endpoints to persist and retrieve product data from a suitable data store (e.g., a database), and display the results on the front-end with sorting or filtering as needed.
+Stack & Practices
+
+Front-End:
+Use React with TypeScript. Organize your components, ensure logical state management, and handle data fetching with clarity and consistency.
+Back-End:
+Use Node.js or Nest.js with TypeScript. Implement a structured API with clear endpoints for authentication and product operations. Utilize a database or another persistence layer to store user and product data—no mocks needed.
+Code Quality:
+Write production-level code with strong error handling, modular architecture, and a unified coding style.
+Additional Instructions
+
+Include a brief documentation of your system’s architecture and data flow.
+Once complete, publish your code to a public GitHub repository and share the link.
+We look forward to reviewing your work. Good luck!
+
+Best regards,
+Emad
